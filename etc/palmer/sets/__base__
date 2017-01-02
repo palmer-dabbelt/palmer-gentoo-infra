@@ -1,5 +1,6 @@
 app-admin/sysklogd
 app-editors/vim
+app-misc/tmux
 dev-vcs/git
 net-misc/dhcpcd
 net-misc/netifrc
