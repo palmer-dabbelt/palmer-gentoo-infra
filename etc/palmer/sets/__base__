@@ -1,0 +1,12 @@
+app-admin/sysklogd
+app-editors/vim
+dev-vcs/git
+net-misc/dhcpcd
+net-misc/netifrc
+net-misc/ntp
+sys-apps/pciutils
+sys-boot/grub
+sys-fs/cryptsetup
+sys-fs/btrfs-progs
+sys-kernel/gentoo-sources
+sys-process/cronie

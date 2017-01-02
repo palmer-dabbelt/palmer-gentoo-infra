@@ -1,0 +1,2 @@
+CONFIG_USE = array
+CONFIG_PLATFORM = p3k
