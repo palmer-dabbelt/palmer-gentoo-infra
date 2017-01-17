@@ -41,7 +41,7 @@ endif
 # It's expected that these variables will change over time as various versions
 # of things get bumped.
 STAGE3_VERSION = 20161215
-KERNEL_VERSION = 4.4.26
+KERNEL_VERSION = 4.4.39
 
 ###############################################################################
 # Pre-Install
