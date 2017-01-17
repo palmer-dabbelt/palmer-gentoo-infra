@@ -235,6 +235,7 @@ usr/src/linux-$(KERNEL_VERSION)-gentoo/.config: \
 usr/src/linux-$(KERNEL_VERSION)-gentoo/vmlinux: \
 		usr/src/linux-$(KERNEL_VERSION)-gentoo/.config
 	$(MAKE) -C $(dir $@)
+	touch $@
 
 boot/vmlinux-$(KERNEL_VERSION)-gentoo: \
 		usr/src/linux-$(KERNEL_VERSION)-gentoo/vmlinux
@@ -246,5 +247,5 @@ boot/vmlinux-$(KERNEL_VERSION)-gentoo: \
 boot/grub/grub.cfg: boot/vmlinux-$(KERNEL_VERSION)-gentoo
 	grub-mkconfig -o $@
 
-boot/EFI/gentoo/grub64.efi:
+boot/EFI/gentoo/grubx64.efi:
 	grub-install --target=x86_64-efi --efi-directory=/boot
