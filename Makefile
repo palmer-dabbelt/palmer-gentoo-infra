@@ -215,10 +215,13 @@ var/lib/palmer/update-portage.stamp: \
 # Updates the rest of the packages on the system.
 var/lib/palmer/update-world.stamp: \
 		var/lib/portage/world \
+		etc/portage/package.keywords \
 		var/lib/palmer/update-portage.stamp \
 		etc/portage/make.profile \
 		var/lib/palmer/sync.stamp
 	emerge -vNDu @world
+	emerge @preserved-rebuild
+	emerge --depclean
 	date > $@
 
 # Linux
