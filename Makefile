@@ -125,7 +125,10 @@ etc/fstab: var/lib/palmer/preinstall-stage3-extract.stamp
 	echo "/dev/sda1 /boot vfat ro 0 2" >> $@
 	echo "/dev/mapper/crypt-sda2 / btrfs subvol=roots/gentoo,discard 0 1" >> $@
 	echo "/dev/mapper/crypt-sda2 /media/internal btrfs discard 0 1" >> $@
-	echo "/dev/mapper/crypt-sdb1 /media/array btrfs defaults 0 1" >> $@
+	echo "/dev/mapper/crypt-sdb1 /media/array btrfs compress=zlib,discard 0 1" >> $@
+	echo "/dev/mapper/crypt-sdb1 /home btrfs subvol=homes,compress=zlib,discard 0 1" >> $@
+	echo "/dev/mapper/crypt-sdb1 /global btrfs subvol=global,compress=zlib,discard 0 1" >> $@
+	echo "/dev/mapper/crypt-sdb1 /var/lib/transmission btrfs subvol=torrent,compress=zlib,discard 0 1" >> $@
 
 etc/conf.d/hostname: var/lib/palmer/preinstall-stage3-extract.stamp
 	@mkdir -p $(dir $@)
