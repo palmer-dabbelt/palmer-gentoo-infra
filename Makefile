@@ -12,7 +12,10 @@ preinstall: var/lib/palmer/preinstall.stamp
 
 # Synchronizes the portage database with upstream.
 .PHONY: sync
-sync: var/lib/palmer/sync.stamp
+sync::
+	emaint sync -A
+	date > var/lib/palmer/sync.stamp
+	$(MAKE)
 
 # This Makefile is configured by creating a Makefile.config.  Users need to do
 # this in order to specify which machine is being setup.
