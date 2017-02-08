@@ -43,6 +43,9 @@ endif
 STAGE3_VERSION = 20170202
 KERNEL_VERSION = 4.4.39
 
+# You might want to change these
+STAGE3_URL = http://cosmos.illinois.edu/pub/gentoo/releases/amd64/autobuilds/current-stage3-amd64/stage3-amd64-$(STAGE3_VERSION).tar.bz2
+
 ###############################################################################
 # Pre-Install
 ###############################################################################
@@ -54,9 +57,11 @@ var/lib/palmer/preinstall-ntpdate.stamp:
 	date > $@
 
 # Downloads and extracts a stage3 tarball.
-var/lib/palmer/stage3-amd64.tar.bz: /usr/bin/wget var/lib/palmer/preinstall-ntpdate.stamp
+var/lib/palmer/stage3-amd64.tar.bz: \
+		/usr/bin/wget \
+		var/lib/palmer/preinstall-ntpdate.stamp
 	@mkdir -p $(dir $@)
-	$< http://cosmos.illinois.edu/pub/gentoo/releases/amd64/autobuilds/current-stage3-amd64/stage3-amd64-$(STAGE3_VERSION).tar.bz2 -O $@
+	$< $(STAGE3_URL) -O $@
 	touch $@
 
 var/lib/palmer/preinstall-stage3-extract.stamp: var/lib/palmer/stage3-amd64.tar.bz
