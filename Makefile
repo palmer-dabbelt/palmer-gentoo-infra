@@ -49,6 +49,7 @@ KERNEL_VERSION = 4.4.39
 
 # Ensures the system's clock is correct.
 var/lib/palmer/preinstall-ntpdate.stamp:
+	@mkdir -p $(dir $@)
 	ntpdate -b -u pool.ntp.org
 	date > $@
 
