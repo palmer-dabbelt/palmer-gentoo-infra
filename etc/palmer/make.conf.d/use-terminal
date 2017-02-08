@@ -1,1 +1,1 @@
-USE="X png glamor xcb"
+USE="$USE X png glamor xcb"
