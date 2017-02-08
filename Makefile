@@ -40,7 +40,7 @@ endif
 
 # It's expected that these variables will change over time as various versions
 # of things get bumped.
-STAGE3_VERSION = 20161215
+STAGE3_VERSION = 20170202
 KERNEL_VERSION = 4.4.39
 
 ###############################################################################
