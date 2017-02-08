@@ -70,6 +70,7 @@ var/lib/palmer/preinstall-stage3-extract.stamp: var/lib/palmer/stage3-amd64.tar.
 
 # Copies DNS from the the host machine
 etc/resolv.conf: /etc/resolv.conf
+	@mkdir -p $(dir $@)
 	cp -L $< $@
 
 # Mounts the various Gentoo directories
