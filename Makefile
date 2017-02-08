@@ -41,7 +41,7 @@ endif
 # It's expected that these variables will change over time as various versions
 # of things get bumped.
 STAGE3_VERSION = 20170202
-KERNEL_VERSION = 4.4.39
+KERNEL_VERSION = 4.9.6-gentoo-r1
 
 # You might want to change these
 STAGE3_URL = http://cosmos.illinois.edu/pub/gentoo/releases/amd64/autobuilds/current-stage3-amd64/stage3-amd64-$(STAGE3_VERSION).tar.bz2
@@ -169,7 +169,7 @@ var/lib/palmer/update.stamp: \
 		var/lib/palmer/install.stamp \
 		var/lib/palmer/update-portage.stamp \
 		var/lib/palmer/update-world.stamp \
-		boot/vmlinux-$(KERNEL_VERSION)-gentoo \
+		boot/vmlinux-$(KERNEL_VERSION) \
 		boot/grub/grub.cfg
 	date > $@
 
@@ -232,26 +232,26 @@ var/lib/palmer/update-world.stamp: \
 	date > $@
 
 # Linux
-usr/src/linux-$(KERNEL_VERSION)-gentoo/.config: \
+usr/src/linux-$(KERNEL_VERSION)/.config: \
 		var/lib/palmer/update-world.stamp \
 		etc/palmer/linux.config
 	$(MAKE) -C $(dir $@) defconfig
 	cat etc/palmer/linux.config >> $@
 	$(MAKE) -C $(dir $@) olddefconfig
 
-usr/src/linux-$(KERNEL_VERSION)-gentoo/vmlinux: \
-		usr/src/linux-$(KERNEL_VERSION)-gentoo/.config
+usr/src/linux-$(KERNEL_VERSION)/vmlinux: \
+		usr/src/linux-$(KERNEL_VERSION)/.config
 	$(MAKE) -C $(dir $@)
 	touch $@
 
-boot/vmlinux-$(KERNEL_VERSION)-gentoo: \
-		usr/src/linux-$(KERNEL_VERSION)-gentoo/vmlinux
+boot/vmlinux-$(KERNEL_VERSION): \
+		usr/src/linux-$(KERNEL_VERSION)/vmlinux
 	$(MAKE) -C $(dir $<) modules_install
 	$(MAKE) -C $(dir $<) install
 	touch $@
 
 # Grub installation and configuration
-boot/grub/grub.cfg: boot/vmlinux-$(KERNEL_VERSION)-gentoo
+boot/grub/grub.cfg: boot/vmlinux-$(KERNEL_VERSION)
 	grub-mkconfig -o $@
 
 boot/EFI/gentoo/grubx64.efi:
