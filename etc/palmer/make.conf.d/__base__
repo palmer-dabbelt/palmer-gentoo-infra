@@ -3,4 +3,6 @@ CXXFLAGS="${CFLAGS}"
 
 GRUB_PLATFORMS="efi-64"
 
+PORTAGE_NICENESS="15"
+
 USE="static-libs python"
