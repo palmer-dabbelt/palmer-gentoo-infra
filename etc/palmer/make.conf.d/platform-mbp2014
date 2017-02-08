@@ -1,1 +1,1 @@
-USE="mmx sse"
+USE="$USE mmx sse"
