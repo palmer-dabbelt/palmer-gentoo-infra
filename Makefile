@@ -206,7 +206,7 @@ var/lib/portage/world: \
 var/lib/palmer/sync.stamp: \
 		etc/portage/repos.conf \
 		etc/portage/make.conf
-	env -i /usr/sbin/emaint sync -a
+	env emaint sync -a
 	date > $@
 
 # Updates portage, which is supposed to be the first thing that happens
@@ -215,7 +215,7 @@ var/lib/palmer/sync.stamp: \
 var/lib/palmer/update-portage.stamp: \
 		etc/portage/make.profile \
 		var/lib/palmer/sync.stamp
-	env -i emerge -u1 portage
+	env emerge -u1 portage
 	date > $@
 
 # Updates the rest of the packages on the system.
@@ -225,9 +225,9 @@ var/lib/palmer/update-world.stamp: \
 		var/lib/palmer/update-portage.stamp \
 		etc/portage/make.profile \
 		var/lib/palmer/sync.stamp
-	env -i emerge -vNDu @world
-	env -i emerge @preserved-rebuild
-	env -i emerge --depclean
+	env emerge -vNDu @world
+	env emerge @preserved-rebuild
+	env emerge --depclean
 	date > $@
 
 # Linux
