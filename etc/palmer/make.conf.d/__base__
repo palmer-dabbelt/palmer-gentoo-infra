@@ -5,4 +5,7 @@ GRUB_PLATFORMS="efi-64"
 
 PORTAGE_NICENESS="15"
 
+INPUT_DEVICES="evdev keyboard mouse synaptics"
+VIDEO_CARDS="intel"
+
 USE="static-libs python"
