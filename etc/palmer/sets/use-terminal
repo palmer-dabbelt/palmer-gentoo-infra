@@ -20,5 +20,6 @@ x11-apps/setxkbmap
 x11-apps/xrandr
 x11-base/xorg-server
 x11-misc/slim
+x11-misc/slock
 x11-terms/rxvt-unicode
 x11-wm/awesome
