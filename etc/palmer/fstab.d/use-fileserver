@@ -1,0 +1,4 @@
+/dev/mapper/crypt-sdb1 /media/array btrfs compress=zlib,discard 0 1
+/dev/mapper/crypt-sdb1 /home btrfs subvol=homes,compress=zlib,discard 0 1
+/dev/mapper/crypt-sdb1 /global btrfs subvol=global,compress=zlib,discard 0 1
+/dev/mapper/crypt-sdb1 /var/lib/transmission btrfs subvol=torrent,compress=zlib,discard 0 1
