@@ -206,7 +206,7 @@ var/lib/portage/world: \
 var/lib/palmer/sync.stamp: \
 		etc/portage/repos.conf \
 		etc/portage/make.conf
-	env -i emaint sync -a
+	env -i /usr/sbin/emaint sync -a
 	date > $@
 
 # Updates portage, which is supposed to be the first thing that happens
