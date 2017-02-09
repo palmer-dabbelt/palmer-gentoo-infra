@@ -2,7 +2,7 @@
 USE="$USE X gtk xinerama"
 
 # These are needed by Awesome
-USE="$USE png glamor xcb libnotify"
+USE="$USE glamor xcb libnotify"
 
 # These are to have a pretty urxvt
 USE="$USE 256-color xft"
