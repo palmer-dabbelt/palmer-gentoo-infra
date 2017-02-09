@@ -9,3 +9,6 @@ USE="$USE 256-color xft"
 
 # This is necessary for Chromium support
 USE="$USE svc text minizip icu"
+
+# I want zathura to be able to display all formats
+USE="$USE pdf cb djvu postscript cairo"
