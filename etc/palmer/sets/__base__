@@ -2,6 +2,7 @@ app-admin/sysklogd
 app-editors/nano
 app-editors/vim
 app-misc/tmux
+app-portage/gentoolkit
 app-text/tek
 dev-libs/putil
 dev-vcs/git
