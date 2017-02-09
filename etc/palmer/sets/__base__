@@ -12,6 +12,7 @@ net-misc/keychain
 sci-calculators/units
 sys-apps/pciutils
 sys-apps/pv
+sys-auth/palmer-keyring
 sys-boot/grub
 sys-devel/pconfigure
 sys-fs/cryptsetup

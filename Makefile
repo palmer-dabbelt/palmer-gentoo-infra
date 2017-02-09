@@ -222,7 +222,7 @@ var/lib/palmer/sync.stamp: \
 var/lib/palmer/update-portage.stamp: \
 		etc/portage/make.profile \
 		var/lib/palmer/sync.stamp
-	env emerge -u1 portage
+	env - PATH="$(PATH)" emerge -u1 portage
 	date > $@
 
 # Updates the rest of the packages on the system.
@@ -233,9 +233,9 @@ var/lib/palmer/update-world.stamp: \
 		var/lib/palmer/update-portage.stamp \
 		etc/portage/make.profile \
 		var/lib/palmer/sync.stamp
-	env emerge -vNDu @world
-	env emerge @preserved-rebuild
-	env emerge --depclean
+	env - PATH="$(PATH)" emerge -vNDu @world
+	env - PATH="$(PATH)" emerge @preserved-rebuild
+	env - PATH="$(PATH)" emerge --depclean
 	date > $@
 
 # Linux
@@ -258,7 +258,9 @@ boot/vmlinux-$(KERNEL_VERSION): \
 	touch $@
 
 # Grub installation and configuration
-boot/grub/grub.cfg: boot/vmlinux-$(KERNEL_VERSION)
+boot/grub/grub.cfg: \
+		boot/vmlinux-$(KERNEL_VERSION) \
+		boot/EFI/gentoo/grubx64.efi
 	grub-mkconfig -o $@
 
 boot/EFI/gentoo/grubx64.efi:

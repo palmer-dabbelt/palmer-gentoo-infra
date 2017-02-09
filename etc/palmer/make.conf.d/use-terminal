@@ -1,3 +1,11 @@
-USE="$USE X gtk"
+# Turn on X and GTK, but not GNOME
+USE="$USE X gtk xinerama"
 
-USE="$USE png glamor xcb"
+# These are needed by Awesome
+USE="$USE png glamor xcb libnotify"
+
+# These are to have a pretty urxvt
+USE="$USE 256-color xft"
+
+# This is necessary for Chromium support
+USE="$USE svc text minizip icu"
