@@ -247,6 +247,8 @@ usr/src/linux-$(KERNEL_VERSION)/.config: \
 	$(MAKE) -C $(dir $@) olddefconfig
 
 usr/src/linux-$(KERNEL_VERSION)/vmlinux: \
+		etc/palmer/initrd.conf \
+		$(shell cat etc/palmer/initrd.conf | grep ^file | cut -d' ' -f3) \
 		usr/src/linux-$(KERNEL_VERSION)/.config
 	$(MAKE) -C $(dir $@)
 	touch $@
