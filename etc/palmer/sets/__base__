@@ -10,6 +10,7 @@ net-fs/nfs-utils
 net-misc/dhcpcd
 net-misc/netifrc
 net-misc/ntp
+net-misc/mosh
 net-misc/keychain
 sci-calculators/units
 sys-apps/pciutils
