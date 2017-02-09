@@ -1,1 +1,4 @@
 USE="$USE wifi"
+
+# For nm-client
+USE="$USE policykit dbus gnome-keyring"

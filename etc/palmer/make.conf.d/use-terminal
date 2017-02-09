@@ -1,1 +1,3 @@
-USE="$USE X png glamor xcb"
+USE="$USE X gtk"
+
+USE="$USE png glamor xcb"
