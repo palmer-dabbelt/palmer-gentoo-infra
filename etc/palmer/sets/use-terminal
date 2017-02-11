@@ -14,6 +14,7 @@ media-fonts/symbola
 media-fonts/terminus-font
 media-fonts/urw-fonts
 media-gfx/feh
+media-sound/pulseaudio
 net-irc/hexchat
 net-misc/tigervnc
 www-client/chromium

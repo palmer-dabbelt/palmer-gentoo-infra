@@ -15,3 +15,6 @@ USE="$USE pdf cb djvu postscript cairo"
 
 # My machines all support hardware acceleration
 USE="$USE egl opengl vaapi vdpau drm"
+
+# I want pulseaudio support via alsa
+USE="$USE pulseaudio alsa"
