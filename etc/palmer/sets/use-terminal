@@ -15,6 +15,7 @@ media-fonts/terminus-font
 media-fonts/urw-fonts
 media-gfx/feh
 net-irc/hexchat
+net-misc/tigervnc
 www-client/chromium
 x11-apps/setxkbmap
 x11-apps/xrandr
