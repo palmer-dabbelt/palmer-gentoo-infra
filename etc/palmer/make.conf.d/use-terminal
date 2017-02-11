@@ -12,3 +12,6 @@ USE="$USE svc text minizip icu"
 
 # I want zathura to be able to display all formats
 USE="$USE pdf cb djvu postscript cairo"
+
+# My machines all support hardware acceleration
+USE="$USE egl opengl vaapi vdpau drm"
