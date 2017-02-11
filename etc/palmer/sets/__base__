@@ -24,4 +24,5 @@ sys-fs/cryptsetup
 sys-fs/btrfs-progs
 sys-kernel/gentoo-sources
 sys-process/cronie
+sys-power/cpupower
 www-servers/pshs
