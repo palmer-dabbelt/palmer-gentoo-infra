@@ -1,5 +1,6 @@
 app-admin/sudo
 app-admin/sysklogd
+app-benchmarks/i7z
 app-editors/nano
 app-editors/vim
 app-misc/tmux
