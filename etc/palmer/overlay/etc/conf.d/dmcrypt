@@ -64,15 +64,15 @@ dmcrypt_retries=5
 
 target=crypt-sdb1
 source='/dev/sdb1'
-key=/etc/palmer/disk-keys/@@HOSTNAME@@/sdb1
+key=/etc/palmer/disk-keys/@@HOSTNAME@@/array
 
 target=crypt-sdc1
 source='/dev/sdc1'
-key=/etc/palmer/disk-keys/@@HOSTNAME@@/sdc1
+key=/etc/palmer/disk-keys/@@HOSTNAME@@/array
 
 target=crypt-sdd1
 source='/dev/sdd1'
-key=/etc/palmer/disk-keys/@@HOSTNAME@@/sdd1
+key=/etc/palmer/disk-keys/@@HOSTNAME@@/array
 
 #--------------------
 # dm-crypt examples
