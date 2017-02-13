@@ -27,4 +27,4 @@ USE="$USE vorbis vpx wavpack webp x264 x265 xvid zvbi"
 USE="$USE bluray cdda dvb dvd encode jpeg libguess libmpv rubberband sdl v4l"
 
 # I'm going to try and use Wayland
-USE="$USE wayland gles"
+USE="$USE wayland gles xkb gles2"
