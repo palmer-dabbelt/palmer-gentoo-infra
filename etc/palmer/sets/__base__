@@ -4,6 +4,7 @@ app-benchmarks/i7z
 app-editors/nano
 app-editors/vim
 app-misc/tmux
+app-misc/palmer-scripts
 app-portage/gentoolkit
 app-text/tek
 dev-libs/putil
