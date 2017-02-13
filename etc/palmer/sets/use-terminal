@@ -16,6 +16,7 @@ media-fonts/urw-fonts
 media-gfx/feh
 media-sound/pulseaudio
 media-sound/pavucontrol
+media-video/mpv
 net-irc/hexchat
 net-misc/tigervnc
 www-client/chromium

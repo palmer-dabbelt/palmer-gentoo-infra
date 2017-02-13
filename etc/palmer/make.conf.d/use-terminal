@@ -18,3 +18,10 @@ USE="$USE egl opengl vaapi vdpau drm"
 
 # I want pulseaudio support via alsa
 USE="$USE pulseaudio alsa"
+
+# Support for many AV codecs
+USE="$USE aac aacplus amr amrenc bluray celt faac gsm jpeg2k ladspa libass"
+USE="$USE libcaca librtmp libsoxr libv4l lzma mp3 openal openssl opus quvi"
+USE="$USE samba schroedinger sdl snappy speex ssh theora truetype twolame v4l"
+USE="$USE vorbis vpx wavpack webp x264 x265 xvid zvbi"
+USE="$USE bluray cdda dvb dvd encode jpeg libguess libmpv rubberband sdl v4l"
