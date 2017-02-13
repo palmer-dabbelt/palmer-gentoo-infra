@@ -19,6 +19,7 @@ media-sound/pavucontrol
 media-video/mpv
 net-irc/hexchat
 net-misc/tigervnc
+net-misc/x2goclient
 www-client/chromium
 x11-apps/setxkbmap
 x11-apps/xrandr
