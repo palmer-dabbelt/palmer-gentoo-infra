@@ -8,6 +8,7 @@ app-portage/gentoolkit
 app-text/tek
 dev-libs/putil
 dev-vcs/git
+dev-vcs/git-merge-changelog
 net-analyzer/iftop
 net-fs/nfs-utils
 net-misc/dhcpcd
