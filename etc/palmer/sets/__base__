@@ -22,6 +22,7 @@ sys-apps/pciutils
 sys-apps/pv
 sys-auth/palmer-keyring
 sys-boot/grub
+sys-devel/clang
 sys-devel/pconfigure
 sys-fs/cryptsetup
 sys-fs/btrfs-progs

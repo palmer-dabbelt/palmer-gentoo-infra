@@ -8,4 +8,4 @@ PORTAGE_NICENESS="15"
 INPUT_DEVICES="evdev keyboard mouse synaptics"
 VIDEO_CARDS="intel i965"
 
-USE="static-libs python png"
+USE="static-libs python png clang"
