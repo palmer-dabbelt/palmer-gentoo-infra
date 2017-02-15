@@ -1,3 +1,0 @@
-FEATURES="${FEATURES} splitdebug compressdebug installsources -nostrip"
-CFLAGS="${CFLAGS} -g"
-CXXFLAGS="${CXXFLAGS} -g"
