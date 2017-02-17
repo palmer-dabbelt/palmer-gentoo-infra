@@ -1,5 +1,6 @@
 app-admin/sudo
 app-admin/sysklogd
+app-arch/unrar
 app-benchmarks/i7z
 app-editors/nano
 app-editors/vim
