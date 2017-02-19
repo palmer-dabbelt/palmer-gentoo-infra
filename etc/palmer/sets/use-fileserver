@@ -1,4 +1,5 @@
 media-tv/plex-media-server
+media-video/ffmpeg
 net-fs/nfs-utils
 net-fs/samba
 net-p2p/transmission
