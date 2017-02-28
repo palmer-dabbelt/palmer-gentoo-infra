@@ -74,6 +74,18 @@ target=crypt-sdd1
 source='/dev/sdd1'
 key=/etc/palmer/disk-keys/@@HOSTNAME@@/array
 
+target=crypt-sde1
+source='/dev/sde1'
+key=/etc/palmer/disk-keys/@@HOSTNAME@@/array
+
+target=crypt-sdf1
+source='/dev/sdf1'
+key=/etc/palmer/disk-keys/@@HOSTNAME@@/array
+
+target=crypt-sdg1
+source='/dev/sdg1'
+key=/etc/palmer/disk-keys/@@HOSTNAME@@/array
+
 #--------------------
 # dm-crypt examples
 #--------------------
