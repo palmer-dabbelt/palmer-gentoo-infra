@@ -1,0 +1,20 @@
+#!/bin/bash
+
+interface=$1
+status=$2
+HOME=/home/palmer
+USER=palmer
+
+case $status in
+    up)
+        /bin/su $USER -c $HOME/.local/bin/mhng-pipe-network_up
+        ;;
+    down)
+        if [[ "$(nmcli -m multiline nm | grep ^STATE | grep disconnected | wc -l)" == 0 ]]
+        then
+            /bin/su $USER -c /usr/bin/mhng-pipe-network_up
+        else
+            /bin/su $USER -c /usr/bin/mhng-pipe-network_down
+        fi
+        ;;
+esac

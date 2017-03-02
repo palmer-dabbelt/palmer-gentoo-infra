@@ -1,0 +1,22 @@
+#!/bin/bash
+
+interface="$1"
+
+# If the device doesn't exist any more then it was some sort of USB
+# device, so just go ahead and re-enable WiFi.
+nmcli device show $interface || nmcli radio wifi on
+
+# If the device is there then check if it's Ethernet.  When connected
+# to Ethernet we don't want to also connect to WiFi, as things can
+# fall over and die.
+if [[ "$(nmcli device show $interface | grep "^GENERAL.TYPE" | grep "ethernet$" | wc -l)" != "0" ]]
+then
+    case "$2" in
+        up)
+            nmcli radio wifi off
+            ;;
+        down)
+            nmcli radio wifi on
+            ;;
+    esac
+fi
