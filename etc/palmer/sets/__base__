@@ -19,8 +19,10 @@ net-misc/ntp
 net-misc/mosh
 net-misc/keychain
 sci-calculators/units
+sys-apps/ethtool
 sys-apps/pciutils
 sys-apps/pv
+sys-apps/usbutils
 sys-auth/palmer-keyring
 sys-boot/grub
 sys-devel/pconfigure
