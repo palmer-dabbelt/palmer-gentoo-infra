@@ -1,4 +1,4 @@
-# Copyright 2016 Palmer Dabbelt <palmer@dabbelt.com>
+# Copyright 2016-2017 Palmer Dabbelt <palmer@dabbelt.com>
 # 
 # Sets up one of my computers.
 
@@ -40,7 +40,7 @@ endif
 
 # It's expected that these variables will change over time as various versions
 # of things get bumped.
-STAGE3_VERSION = 20170202
+STAGE3_VERSION = 20170209
 KERNEL_VERSION = 4.9.6-gentoo-r1
 
 # You might want to change these
