@@ -1,1 +1,3 @@
 USE="$USE mmx sse"
+
+USE="$USE bluetooth"
