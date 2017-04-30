@@ -1,1 +1,1 @@
-CPU_FLAGS_X86="mmx sse"
+CPU_FLAGS_X86="mmx sse2"
