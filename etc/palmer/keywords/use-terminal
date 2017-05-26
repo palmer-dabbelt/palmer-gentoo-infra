@@ -1,3 +1,8 @@
 ~dev-libs/weston-1.12.0
 ~dev-libs/wayland-1.12.0
 ~dev-libs/wayland-protocols-1.7
+
+# I need the latest protocol buffers
+<dev-libs/protocol-buffers-3.4.0
+<dev-libs/protobuf-python-3.4.0
+dev-python/namespace-google
