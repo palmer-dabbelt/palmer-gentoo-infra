@@ -1,1 +1,5 @@
 net-print/gutenprint ppds
+
+# muPDF can't build with OpenGL and static-libs.  Since I don't care about PDF
+# viewing in my initrd, I'll turn those off.
+app-text/mupdf -static-libs
