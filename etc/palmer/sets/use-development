@@ -1,5 +1,6 @@
 app-emulation/virtualbox
 app-emulation/virtualbox-extpack-oracle
+app-text/texlive
 dev-util/debugedit
 dev-vcs/bfg
 sys-devel/clang
