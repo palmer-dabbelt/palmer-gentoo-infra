@@ -3,3 +3,5 @@ dev-vcs/subversion -dso perl
 
 # My LaTeX builds need all of these
 app-text/texlive cjk context extra graphics humanities metapost pstricks publishers science tex4ht xml
+app-text/texlive-core xetex cjk
+media-libs/gd fontconfig
