@@ -29,3 +29,6 @@ USE="$USE widevine postproc"
 
 # I'm going to try and use Wayland
 USE="$USE wayland gles xkb gles2 xwayland"
+
+# If I'm logging in to the machine then I want CUPS
+USE="$USE cups"
