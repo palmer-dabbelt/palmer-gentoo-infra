@@ -22,3 +22,6 @@
 
 /etc/*
 !/etc/palmer
+!/etc/portage
+/etc/portage/*
+!/etc/portage/patches
