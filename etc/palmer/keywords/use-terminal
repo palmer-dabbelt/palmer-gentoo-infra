@@ -6,3 +6,6 @@
 <dev-libs/protocol-buffers-3.4.0
 <dev-libs/protobuf-python-3.4.0
 dev-python/namespace-google
+
+# 1.7.1 doesn't build for me
+~dev-tex/chktex-1.7.2
