@@ -41,7 +41,7 @@ endif
 # It's expected that these variables will change over time as various versions
 # of things get bumped.
 STAGE3_VERSION = 20170209
-KERNEL_VERSION = 4.9.16-gentoo
+KERNEL_VERSION = 4.12.5-gentoo
 
 # You might want to change these
 STAGE3_URL = http://cosmos.illinois.edu/pub/gentoo/releases/amd64/autobuilds/current-stage3-amd64/stage3-amd64-$(STAGE3_VERSION).tar.bz2
