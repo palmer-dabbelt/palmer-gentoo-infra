@@ -1,5 +1,6 @@
 app-emulation/virtualbox
 app-emulation/virtualbox-extpack-oracle
+app-text/pandoc
 app-text/texlive
 dev-util/debugedit
 dev-vcs/bfg
