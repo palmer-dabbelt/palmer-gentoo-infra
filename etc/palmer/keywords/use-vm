@@ -2,3 +2,4 @@
 <app-emulation/virtualbox-modules-5.1.26
 <app-emulation/virtualbox-guest-additions-5.1.26
 <app-emulation/virtualbox-extpack-oracle-5.1.26
+~dev-util/kbuild-0.1.9998_pre20131130
