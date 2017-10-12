@@ -18,6 +18,7 @@ net-misc/netifrc
 net-misc/ntp
 net-misc/mosh
 net-misc/keychain
+net-misc/sshpass
 sci-calculators/units
 sys-apps/ethtool
 sys-apps/pciutils
