@@ -22,6 +22,7 @@ media-gfx/inkscape
 media-sound/pulseaudio
 media-sound/pavucontrol
 media-video/mpv
+net-dns/dnsmasq
 net-irc/hexchat
 net-misc/tigervnc
 net-misc/x2goclient
