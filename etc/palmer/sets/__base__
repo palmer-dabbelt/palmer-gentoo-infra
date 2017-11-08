@@ -30,7 +30,7 @@ sys-devel/pconfigure
 sys-fs/cryptsetup
 sys-fs/btrfs-progs
 sys-kernel/gentoo-sources
-sys-process/cronie
+sys-process/fcron
 sys-process/iotop
 sys-power/cpupower
 www-servers/pshs
