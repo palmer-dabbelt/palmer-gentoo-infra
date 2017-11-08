@@ -1,5 +1,5 @@
 app-admin/sudo
-app-admin/sysklogd
+app-admin/syslog-ng
 app-arch/unrar
 app-benchmarks/i7z
 app-editors/nano
