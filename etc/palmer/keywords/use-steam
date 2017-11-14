@@ -4,3 +4,5 @@ games-util/steam-meta
 games-util/steam-games-meta
 
 ~sys-libs/libudev-compat-186
+
+~app-emulation/wine-staging-2.18
