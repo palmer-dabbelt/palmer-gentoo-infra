@@ -5,4 +5,5 @@ app-text/texlive
 dev-util/debugedit
 dev-vcs/bfg
 sys-devel/clang
+sys-devel/crossdev
 sys-devel/gdb
