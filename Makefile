@@ -106,7 +106,7 @@ etc/timezone:
 
 # Sets up the profile symlink.  I always just use the default one.
 etc/portage/make.profile: var/lib/palmer/sync.stamp
-	eselect profile set 1
+	eselect profile set default/linux/amd64/17.0
 	touch $@
 
 # Sets up my locales
