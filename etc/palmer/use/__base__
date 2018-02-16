@@ -3,3 +3,4 @@ sys-fs/cryptsetup static kernel -gcrypt -nettle -openssl
 sys-apps/busybox static
 sys-apps/util-linux static-libs
 sys-fs/eudev static-libs
+sys-fs/lvm2 static-libs
