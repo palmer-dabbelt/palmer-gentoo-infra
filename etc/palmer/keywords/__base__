@@ -2,3 +2,4 @@ app-benchmarks/i7z
 dev-vcs/git-merge-changelog
 net-wireless/broadcom-sta
 www-servers/pshs
+<sys-kernel/gentoo-sources-4.15
