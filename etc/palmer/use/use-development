@@ -5,3 +5,6 @@ dev-vcs/subversion -dso perl
 app-text/texlive cjk context extra graphics humanities metapost pstricks publishers science tex4ht xml
 app-text/texlive-core xetex cjk
 media-libs/gd fontconfig
+
+# I want tk for python so my GUI stuff runs
+dev-lang/python tk
