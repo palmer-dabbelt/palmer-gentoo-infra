@@ -1,3 +1,9 @@
 dev-vcs/bfg
 dev-embedded/libftd2xx
+
+# I want the latest arduino IDE
 ~dev-embedded/arduino-1.8.5
+dev-embedded/arduino-listserialportsc
+dev-util/astyle
+dev-embedded/arduino-ctags
+dev-embedded/arduino-builder
