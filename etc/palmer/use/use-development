@@ -8,3 +8,6 @@ media-libs/gd fontconfig
 
 # I want tk for python so my GUI stuff runs
 dev-lang/python tk
+
+# The arduino IDE needs asstyle with java support
+dev-util/astyle java
