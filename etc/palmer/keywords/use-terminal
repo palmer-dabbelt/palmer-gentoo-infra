@@ -9,3 +9,6 @@ dev-python/namespace-google
 
 # 1.7.1 doesn't build for me
 ~dev-tex/chktex-1.7.2
+
+# I need Zoom for SiFive
+net-im/zoom-bin
