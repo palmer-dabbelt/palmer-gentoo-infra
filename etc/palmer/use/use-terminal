@@ -5,3 +5,6 @@ net-print/gutenprint ppds
 app-text/mupdf -static-libs
 
 media-libs/harfbuzz icu
+
+# Zoom needs this
+dev-qt/qtwebchannel qml
