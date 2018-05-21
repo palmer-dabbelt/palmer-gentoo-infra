@@ -36,3 +36,9 @@ x11-misc/slock
 x11-misc/xclip
 x11-terms/rxvt-unicode
 x11-wm/awesome
+
+# I need this to talk to the HiFive1
+app-misc/screen
+
+# I need this to talk to humans
+net-im/zoom-bin
