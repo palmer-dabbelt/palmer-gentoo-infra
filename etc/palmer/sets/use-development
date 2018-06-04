@@ -7,3 +7,4 @@ dev-vcs/bfg
 sys-devel/clang
 sys-devel/crossdev
 sys-devel/gdb
+sys-fs/dosfstools

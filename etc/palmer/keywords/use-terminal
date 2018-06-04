@@ -12,3 +12,6 @@ dev-python/namespace-google
 
 # I need Zoom for SiFive
 net-im/zoom-bin
+
+# I just always want the latest Telegram
+net-im/telegram-desktop-bin
