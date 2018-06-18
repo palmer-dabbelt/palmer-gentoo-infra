@@ -7,3 +7,8 @@ dev-embedded/arduino-listserialportsc
 dev-util/astyle
 dev-embedded/arduino-ctags
 dev-embedded/arduino-builder
+
+# I got a nitrokey
+dev-libs/cppcodec
+app-crypt/libnitrokey
+app-crypt/nitrokey-app
