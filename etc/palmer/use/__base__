@@ -4,3 +4,5 @@ sys-apps/busybox static
 sys-apps/util-linux static-libs
 sys-fs/eudev static-libs
 sys-fs/lvm2 static-libs
+dev-libs/libgpg-error static-libs
+dev-libs/popt static-libs
