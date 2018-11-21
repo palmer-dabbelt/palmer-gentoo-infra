@@ -15,3 +15,6 @@ net-im/zoom-bin
 
 # I just always want the latest Telegram
 net-im/telegram-desktop-bin
+
+# I don't think anyone is too worried about fzy breaking
+app-shells/fzy
