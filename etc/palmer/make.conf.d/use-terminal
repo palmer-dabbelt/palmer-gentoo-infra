@@ -32,3 +32,9 @@ USE="$USE wayland gles xkb gles2 xwayland"
 
 # If I'm logging in to the machine then I want CUPS
 USE="$USE cups"
+
+# I want the client of everything
+USE="$USE client"
+
+# Chromium uses inspection
+USE="$USE inspector"
