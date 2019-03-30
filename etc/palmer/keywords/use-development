@@ -12,3 +12,6 @@ dev-embedded/arduino-builder
 dev-libs/cppcodec
 app-crypt/libnitrokey
 app-crypt/nitrokey-app
+
+# For OE
+dev-util/repo
