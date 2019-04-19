@@ -7,3 +7,4 @@ sys-fs/lvm2 static-libs
 dev-libs/libgpg-error static-libs
 dev-libs/popt static-libs
 virtual/libudev static-libs
+dev-libs/libaio static-libs
