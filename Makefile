@@ -57,7 +57,7 @@ var/lib/palmer/preinstall-ntpdate.stamp:
 	date > $@
 
 # Downloads and extracts a stage3 tarball.
-var/lib/palmer/stage3-amd64.tar.xz \
+var/lib/palmer/stage3-amd64.tar.xz: \
 		/usr/bin/wget \
 		var/lib/palmer/preinstall-ntpdate.stamp
 	@mkdir -p $(dir $@)
