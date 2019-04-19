@@ -6,3 +6,5 @@ games-util/steam-games-meta
 ~sys-libs/libudev-compat-186
 
 app-emulation/wine-staging
+app-emulation/wine-mono
+app-emulation/faudio
