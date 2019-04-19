@@ -1,0 +1,3 @@
+/dev/mapper/crypt-nvmen1p2	/media/internal	btrfs	discard 0 1
+/dev/mapper/crypt-nvmen1p2	/		btrfs	subvol=roots/gentoo 0 1
+/dev/mapper/crypt-nvmen1p2	/home		btrfs	subvol=home 0 1
