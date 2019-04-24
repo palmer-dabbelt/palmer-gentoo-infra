@@ -8,3 +8,5 @@ dev-libs/libgpg-error static-libs
 dev-libs/popt static-libs
 virtual/libudev static-libs
 dev-libs/libaio static-libs
+dev-libs/json-c static-libs
+app-crypt/argon2 static-libs
