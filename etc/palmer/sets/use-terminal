@@ -43,3 +43,6 @@ app-misc/screen
 
 # I need this to talk to humans
 net-im/zoom-bin
+
+# I'm in the process of converting over to Wayland
+gui-wm/sway
