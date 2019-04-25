@@ -8,6 +8,6 @@ PORTAGE_NICENESS="15"
 INPUT_DEVICES="evdev keyboard mouse synaptics"
 VIDEO_CARDS="intel i965"
 
-USE="python png clang pcre16 sqlite"
+USE="python png clang pcre16 sqlite udev"
 
 USE="$USE elogind -consolekit -systemd"
