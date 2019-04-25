@@ -21,3 +21,6 @@ app-shells/fzy
 
 # mako needs user bus support in elogind
 ~sys-auth/elogind-241.2
+
+# I'm happy with an unstable terminal
+x11-terms/kitty
