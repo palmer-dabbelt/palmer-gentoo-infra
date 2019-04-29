@@ -4,3 +4,4 @@ net-wireless/broadcom-sta
 www-servers/pshs
 <sys-kernel/gentoo-sources-4.15
 <sys-kernel/gentoo-sources-4.17
+<sys-kernel/vanilla-sources-5.2
