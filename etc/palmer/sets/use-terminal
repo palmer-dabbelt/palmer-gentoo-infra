@@ -47,7 +47,6 @@ net-im/zoom-bin
 # I'm in the process of converting over to Wayland
 gui-wm/sway
 x11-terms/kitty
-x11-misc/bumblebee
 gui-apps/mako
 x11-misc/dmenu
 x11-terms/wayland
