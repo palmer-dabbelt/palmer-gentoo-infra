@@ -1,2 +1,4 @@
 ~sys-apps/fwupd-1.2.7
 ~sys-apps/thunderbolt-software-user-space-0.9.3
+~dev-util/umockdev-0.12.1
+~sys-apps/bolt-0.7
