@@ -12,3 +12,4 @@ dev-qt/qtwebchannel qml
 # Wayland stuff
 sys-apps/dbus user-session
 gui-wm/sway wallpapers tray
+dev-libs/efl -opengl gles2 -sdl wayland
