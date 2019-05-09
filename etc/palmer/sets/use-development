@@ -11,4 +11,3 @@ sys-fs/dosfstools
 
 # I want QEMU for local hackery
 app-emulation/qemu
-~=sys-apps/dtc-1.5.0
