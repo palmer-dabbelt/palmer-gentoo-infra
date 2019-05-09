@@ -1,2 +1,2 @@
-CONFIG_USE = terminal laptop steam development
+CONFIG_USE = terminal laptop development
 CONFIG_PLATFORM = x1-extreme
