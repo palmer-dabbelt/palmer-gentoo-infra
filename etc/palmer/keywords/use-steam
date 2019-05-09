@@ -4,6 +4,7 @@ games-util/steam-meta
 games-util/steam-games-meta
 
 ~sys-libs/libudev-compat-186
+~x11-libs/libva-compat-1.8.3
 
 app-emulation/wine-staging
 app-emulation/wine-mono
