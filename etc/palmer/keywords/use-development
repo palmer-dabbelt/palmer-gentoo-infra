@@ -15,3 +15,6 @@ app-crypt/nitrokey-app
 
 # For OE
 dev-util/repo
+
+# If I'm hacking then I want the latest version of QEMU
+app-emulation/qemu

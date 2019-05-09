@@ -8,3 +8,6 @@ sys-devel/clang
 sys-devel/crossdev
 sys-devel/gdb
 sys-fs/dosfstools
+
+# I want QEMU for local hackery
+app-emulation/qemu
