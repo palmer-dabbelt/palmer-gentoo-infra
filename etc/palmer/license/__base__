@@ -1,0 +1,3 @@
+app-arch/unrar unRAR
+sys-kernel/linux-firmware linux-firmware no-source-code
+media-fonts/corefonts MSttfEULA
