@@ -13,3 +13,7 @@ dev-qt/qtwebchannel qml
 sys-apps/dbus user-session
 gui-wm/sway wallpapers tray
 dev-libs/efl -opengl gles2 -sdl wayland pulseaudio sound
+
+# Wine needs some 32-bit libraries, which aren't th edefault any more
+dev-libs/libxslt abi_x86_32
+dev-libs/icu abi_x86_32
