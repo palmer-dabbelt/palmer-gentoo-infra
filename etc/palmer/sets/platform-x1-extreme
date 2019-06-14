@@ -1,3 +1,4 @@
 sys-kernel/linux-firmware
 sys-apps/fwupd
 sys-apps/bolt
+sys-apps/nvme-cli
