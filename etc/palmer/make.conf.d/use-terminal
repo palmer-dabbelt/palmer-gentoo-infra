@@ -1,3 +1,6 @@
+# Just give up and compile everything for 32-bit
+ABI_X86="64 32"
+
 # Turn on X and GTK, but not GNOME
 USE="$USE X gtk xinerama"
 
