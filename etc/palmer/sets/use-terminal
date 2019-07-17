@@ -50,3 +50,6 @@ x11-terms/kitty
 gui-apps/mako
 x11-misc/dmenu
 x11-terms/wayland
+
+# music player, only necessary if I'm sitting at the terminal
+media-sound/clay
