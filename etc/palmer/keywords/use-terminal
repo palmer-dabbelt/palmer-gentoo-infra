@@ -32,4 +32,5 @@ dev-python/gmusicapi
 dev-python/gpsoauth
 dev-python/proboscis
 dev-python/codename
+dev-python/pycryptodomex
 media-sound/clay
