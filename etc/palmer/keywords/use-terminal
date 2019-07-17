@@ -24,3 +24,10 @@ app-shells/fzy
 
 # I'm happy with an unstable terminal
 x11-terms/kitty
+
+# I need some newer packages for clay
+dev-python/MechanicalSoup
+dev-python/validictory
+dev-python/gmusicapi
+dev-python/gpsoauth
+dev-python/proboscis
