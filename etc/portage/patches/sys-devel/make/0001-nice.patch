@@ -1,0 +1,59 @@
+diff --git a/src/main.c b/src/main.c
+index 04d6ba5..abc8faf 100644
+--- a/src/main.c
++++ b/src/main.c
+@@ -47,6 +47,9 @@ this program.  If not, see <http://www.gnu.org/licenses/>.  */
+ #ifdef HAVE_FCNTL_H
+ # include <fcntl.h>
+ #endif
++#ifdef HAVE_UNISTD_H
++# include <unistd.h>
++#endif
+ 
+ #ifdef _AMIGA
+ int __stack = 20000; /* Make sure we have 20K of stack space */
+@@ -325,6 +328,9 @@ struct variable shell_var;
+ 
+ char cmd_prefix = '\t';
+ 
++/* The value make will nice itself to. */
++static int arg_nice = 0;
++
+ 
+ /* The usage output.  We write it this way to make life easier for the
+    translators, especially those trying to translate to right-to-left
+@@ -381,6 +387,10 @@ static const char *const usage[] =
+   -p, --print-data-base       Print make's internal database.\n"),
+     N_("\
+   -q, --question              Run no recipe; exit status says if up to date.\n"),
++#ifdef HAVE_UNISTD_H
++    N_("\
++  --nice                      Set a nice value.\n"),
++#endif
+     N_("\
+   -r, --no-builtin-rules      Disable the built-in implicit rules.\n"),
+     N_("\
+@@ -464,6 +474,7 @@ static const struct command_switch switches[] =
+     { CHAR_MAX+7, string, &sync_mutex, 1, 1, 0, 0, 0, "sync-mutex" },
+     { CHAR_MAX+8, flag_off, &silent_flag, 1, 1, 0, 0, &default_silent_flag, "no-silent" },
+     { CHAR_MAX+9, string, &jobserver_auth, 1, 0, 0, 0, 0, "jobserver-fds" },
++    { CHAR_MAX+10, positive_int, &arg_nice, 1, 0, 0, 0, 0, "nice" },
+     { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+   };
+ 
+@@ -1483,6 +1494,15 @@ main (int argc, char **argv, char **envp)
+       arg_job_slots = env_slots;
+   }
+ 
++  /* Nice ourselves, if requested. */
++  if (arg_nice)
++    {
++#ifdef HAVE_UNISTD_H
++      if (nice(0) == nice(arg_nice))
++#endif
++        O (error, NILF, _("warning: unable to nice"));
++    }
++
+   /* Set a variable specifying whether stdout/stdin is hooked to a TTY.  */
+ #ifdef HAVE_ISATTY
+   if (isatty (fileno (stdout)))
