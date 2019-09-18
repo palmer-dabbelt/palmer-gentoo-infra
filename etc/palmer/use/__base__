@@ -10,3 +10,4 @@ virtual/libudev static-libs
 dev-libs/libaio static-libs
 dev-libs/json-c static-libs
 app-crypt/argon2 static-libs
+sys-kernel/linux-firmware -redistributable
