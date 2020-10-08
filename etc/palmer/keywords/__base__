@@ -2,8 +2,6 @@ app-benchmarks/i7z
 dev-vcs/git-merge-changelog
 net-wireless/broadcom-sta
 www-servers/pshs
-<sys-kernel/gentoo-sources-4.15
-<sys-kernel/gentoo-sources-4.17
-<sys-kernel/vanilla-sources-5.2
+sys-kernel/vanilla-sources
 ~sys-fs/cryptsetup-2.1.0
 
