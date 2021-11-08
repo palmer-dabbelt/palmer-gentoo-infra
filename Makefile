@@ -6,10 +6,6 @@
 .PHONY: update
 update: var/lib/palmer/update.stamp
 
-# Does all the pre-chroot steps for when you're installing a new system.
-.PHONY: preinstall
-preinstall: var/lib/palmer/preinstall.stamp
-
 # Synchronizes the portage database with upstream.
 .PHONY: sync
 sync::
@@ -47,48 +43,6 @@ KERNEL_VERSION = 4.19.27-gentoo-r1
 STAGE3_URL = http://gentoo.osuosl.org/releases/amd64/autobuilds/current-stage3-amd64/stage3-amd64-$(STAGE3_VERSION).tar.xz
 
 ###############################################################################
-# Pre-Install
-###############################################################################
-
-# Ensures the system's clock is correct.
-var/lib/palmer/preinstall-ntpdate.stamp:
-	@mkdir -p $(dir $@)
-	ntpdate -b -u pool.ntp.org
-	date > $@
-
-# Downloads and extracts a stage3 tarball.
-var/lib/palmer/stage3-amd64.tar.xz: \
-		/usr/bin/wget \
-		var/lib/palmer/preinstall-ntpdate.stamp
-	@mkdir -p $(dir $@)
-	$< $(STAGE3_URL) -O $@
-	touch $@
-
-var/lib/palmer/preinstall-stage3-extract.stamp: var/lib/palmer/stage3-amd64.tar.xz
-	tar -xJpf $<
-	date > $@
-
-# Copies DNS from the the host machine
-etc/resolv.conf: /etc/resolv.conf
-	@mkdir -p $(dir $@)
-	cp -L $< $@
-
-# Mounts the various Gentoo directories
-var/lib/palmer/preinstall-mount.stamp: /etc/mtab var/lib/palmer/preinstall-stage3-extract.stamp
-	mount -t proc proc proc
-	mount --rbind /sys sys
-	mount --make-rslave sys
-	mount --rbind /dev dev
-	mount --make-rslave dev
-	date > $@
-
-var/lib/palmer/preinstall.stamp: \
-		var/lib/palmer/preinstall-stage3-extract.stamp \
-		var/lib/palmer/preinstall-mount.stamp \
-		etc/resolv.conf
-	date > $@
-
-###############################################################################
 # Install
 ###############################################################################
 
@@ -110,7 +64,7 @@ etc/portage/make.profile: var/lib/palmer/sync.stamp
 	touch $@
 
 # Sets up my locales
-etc/locale.gen: var/lib/palmer/preinstall-stage3-extract.stamp
+etc/locale.gen:
 	@mkdir -p $(dir $@)
 	echo -e "en_US ISO-8859-1\nen_US.UTF-8 UTF-8" > $@
 
