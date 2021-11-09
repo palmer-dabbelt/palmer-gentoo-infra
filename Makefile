@@ -36,11 +36,7 @@ endif
 
 # It's expected that these variables will change over time as various versions
 # of things get bumped.
-STAGE3_VERSION = 20190417T214503Z
-KERNEL_VERSION = 4.19.27-gentoo-r1
-
-# You might want to change these
-STAGE3_URL = http://gentoo.osuosl.org/releases/amd64/autobuilds/current-stage3-amd64/stage3-amd64-$(STAGE3_VERSION).tar.xz
+KERNEL_VERSION = 5.10.76-gentoo-r1
 
 ###############################################################################
 # Install

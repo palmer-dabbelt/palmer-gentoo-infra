@@ -1,3 +1,5 @@
 app-arch/unrar unRAR
 sys-kernel/linux-firmware linux-firmware no-source-code linux-fw-redistributable
 media-fonts/corefonts MSttfEULA
+sys-kernel/gentoo-sources linux-firmware
+net-wireless/broadcom-sta Broadcom
