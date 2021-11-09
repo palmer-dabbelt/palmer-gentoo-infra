@@ -166,7 +166,7 @@ var/lib/portage/world: \
 # Synchronizes the portage database with upstream, which will trigger another
 # update.
 var/lib/palmer/sync.stamp: \
-		etc/portage/repos.conf/gentoo \
+		etc/portage/repos.conf/gentoo.conf \
 		etc/portage/make.conf
 	env emaint sync -a
 	date > $@
