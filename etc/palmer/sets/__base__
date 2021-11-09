@@ -29,7 +29,7 @@ sys-boot/grub
 sys-devel/pconfigure
 sys-fs/cryptsetup
 sys-fs/btrfs-progs
-sys-kernel/vanilla-sources
+sys-kernel/gentoo-sources
 sys-process/fcron
 sys-process/iotop
 sys-power/cpupower
