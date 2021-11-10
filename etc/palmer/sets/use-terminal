@@ -1,3 +1,4 @@
+app-portage/gentoolkit
 app-text/zathura-meta
 dev-libs/weston
 media-fonts/arphicfonts
@@ -19,10 +20,6 @@ media-sound/pulseaudio
 media-sound/pavucontrol
 media-video/mpv
 net-dns/dnsmasq
-net-im/telegram-desktop-bin
-net-irc/hexchat
-net-misc/tigervnc
-net-misc/x2goclient
 net-print/gutenprint
 www-client/google-chrome
 x11-apps/setxkbmap
