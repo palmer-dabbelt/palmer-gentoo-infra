@@ -1,0 +1,4 @@
+/dev/nvme0n1p1			/boot		vfat	ro			0 1
+/dev/mapper/crypt-internal	/media/internal	btrfs	discard			0 1
+/dev/mapper/crypt-internal	/		btrfs	subvol=roots/gentoo	0 1
+/dev/mapper/crypt-internal	/home		btrfs	subvol=home		0 1

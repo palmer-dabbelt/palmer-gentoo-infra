@@ -23,6 +23,7 @@ app-shells/fzy
 ~sys-auth/elogind-241.2
 
 # I'm happy with an unstable terminal
+x11-terms/kitty-terminfo
 x11-terms/kitty
 
 # I need some newer packages for clay

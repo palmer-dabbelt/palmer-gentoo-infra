@@ -14,7 +14,7 @@ sleep 10s
 
 # Attempt to mount my encrypted root disk
 echo "Enter password for encrypted root disk"
-cryptsetup luksOpen --allow-discards /dev/sdb2 crypt-internal
+cryptsetup luksOpen --allow-discards /dev/nvme0n1p2 crypt-internal
 mount -t btrfs -o discard,subvol=roots/gentoo /dev/mapper/crypt-internal /mnt \
     || exec busybox sh
 

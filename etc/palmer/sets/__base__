@@ -5,10 +5,7 @@ app-benchmarks/i7z
 app-editors/nano
 app-editors/vim
 app-misc/tmux
-app-misc/palmer-scripts
 app-portage/gentoolkit
-app-text/tek
-dev-libs/putil
 dev-vcs/git
 dev-vcs/git-merge-changelog
 net-analyzer/iftop
@@ -20,13 +17,12 @@ net-misc/mosh
 net-misc/keychain
 net-misc/sshpass
 sci-calculators/units
+sys-apps/busybox
 sys-apps/ethtool
 sys-apps/pciutils
 sys-apps/pv
 sys-apps/usbutils
-sys-auth/palmer-keyring
 sys-boot/grub
-sys-devel/pconfigure
 sys-fs/cryptsetup
 sys-fs/btrfs-progs
 sys-kernel/gentoo-sources

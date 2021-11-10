@@ -1,5 +1,4 @@
 gnome-extra/nm-applet
 sys-power/acpi
 sys-power/acpid
-sys-power/pm-utils
 x11-apps/xbacklight
