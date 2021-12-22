@@ -5,6 +5,10 @@ sys-devel/clang
 sys-devel/crossdev
 sys-devel/gdb
 sys-fs/dosfstools
+app-vim/editorconfig-vim
+
+app-crypt/ccid
+sys-apps/pcsc-lite
 
 # I want QEMU for local hackery
 app-emulation/qemu
