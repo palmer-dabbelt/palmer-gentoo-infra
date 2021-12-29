@@ -1,4 +1,5 @@
 gnome-extra/nm-applet
+net-vpn/openvpn
 sys-power/acpi
 sys-power/acpid
 x11-apps/xbacklight
