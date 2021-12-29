@@ -23,6 +23,7 @@ sys-apps/pciutils
 sys-apps/pv
 sys-apps/usbutils
 sys-boot/grub
+sys-boot/os-prober
 sys-fs/cryptsetup
 sys-fs/btrfs-progs
 sys-kernel/gentoo-sources

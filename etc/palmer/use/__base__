@@ -13,3 +13,6 @@ app-crypt/argon2 static-libs
 sys-kernel/linux-firmware -redistributable
 sys-libs/libxcrypt static-libs
 virtual/libcrypt static-libs
+
+# for os-prober
+sys-boot/grub mount
