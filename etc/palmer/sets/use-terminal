@@ -33,3 +33,6 @@ x11-misc/xclip
 x11-terms/kitty
 x11-terms/rxvt-unicode
 x11-wm/awesome
+
+# I need this for my home drive
+dev-cpp/tclap
