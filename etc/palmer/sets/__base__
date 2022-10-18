@@ -26,7 +26,7 @@ sys-boot/grub
 sys-boot/os-prober
 sys-fs/cryptsetup
 sys-fs/btrfs-progs
-sys-kernel/gentoo-sources
+sys-kernel/gentoo-kernel
 sys-process/fcron
 sys-process/iotop
 sys-power/cpupower

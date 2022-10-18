@@ -1,11 +1,3 @@
-games-util/steam-client-meta
-games-util/steam-launcher
-games-util/steam-meta
-games-util/steam-games-meta
-
-~sys-libs/libudev-compat-186
-~x11-libs/libva-compat-1.8.3
-
-app-emulation/wine-staging
-app-emulation/wine-mono
-app-emulation/faudio
+*/*::steam-overlay
+games-util/game-device-udev-rules
+sys-libs/libudev-compat

@@ -2,7 +2,6 @@ app-text/texlive
 app-vim/editorconfig-vim
 dev-util/debugedit
 dev-vcs/bfg
-net-mail/b4
 sys-devel/clang
 sys-devel/crossdev
 sys-devel/gdb
@@ -13,9 +12,3 @@ sys-apps/pcsc-lite
 
 # I want QEMU for local hackery
 app-emulation/qemu
-
-cross-riscv64-unknown-linux-gnu/binutils
-cross-riscv64-unknown-linux-gnu/linux-headers
-cross-riscv64-unknown-linux-gnu/gcc
-cross-riscv64-unknown-linux-gnu/glibc
-

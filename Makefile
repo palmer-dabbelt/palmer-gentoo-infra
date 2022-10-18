@@ -8,10 +8,12 @@ update: var/lib/palmer/update.stamp
 
 # Synchronizes the portage database with upstream.
 .PHONY: sync
-sync::
-	emaint sync -A
-	date > var/lib/palmer/sync.stamp
+sync: var/lib/palmer/sync.stamp
+	$(MAKE) $<
 	$(MAKE)
+
+.PHONY: install
+install: var/lib/palmer/install.stamp
 
 # This Makefile is configured by creating a Makefile.config.  Users need to do
 # this in order to specify which machine is being setup.
@@ -33,10 +35,6 @@ endif
 ifeq ($(CONFIG_PLATFORM),)
 $(error etc/palmer/makefrags/host-$(CONFIG_HOSTNAME).mk needs to set CONFIG_PLATFORM)
 endif
-
-# It's expected that these variables will change over time as various versions
-# of things get bumped.
-KERNEL_VERSION = 5.10.76-gentoo-r1
 
 ###############################################################################
 # Install
@@ -116,7 +114,7 @@ var/lib/palmer/update.stamp: \
 		var/lib/palmer/install.stamp \
 		var/lib/palmer/update-portage.stamp \
 		var/lib/palmer/update-world.stamp \
-		boot/vmlinux-$(KERNEL_VERSION) \
+		$(wildcard boot/vmlinux-*) \
 		boot/grub/grub.cfg
 	date > $@
 
@@ -166,7 +164,7 @@ var/lib/portage/world: \
 # Synchronizes the portage database with upstream, which will trigger another
 # update.
 var/lib/palmer/sync.stamp: \
-		etc/portage/repos.conf/gentoo.conf \
+		$(subst etc/palmer/repos.conf.d/,etc/portage/repos.conf/,$(wildcard etc/palmer/repos.conf.d/*)) \
 		etc/portage/make.conf
 	mkdir -p $(dir $@)
 	env emaint sync -a
@@ -195,30 +193,9 @@ var/lib/palmer/update-world.stamp: \
 	env - PATH="$(PATH)" emerge --depclean
 	date > $@
 
-# Linux
-usr/src/linux-$(KERNEL_VERSION)/.config: \
-		var/lib/palmer/update-world.stamp \
-		etc/palmer/linux.config
-	$(MAKE) -C $(dir $@) defconfig
-	cat etc/palmer/linux.config >> $@
-	$(MAKE) -C $(dir $@) olddefconfig
-
-usr/src/linux-$(KERNEL_VERSION)/vmlinux: \
-		etc/palmer/initrd.conf \
-		$(shell cat etc/palmer/initrd.conf | grep ^file | cut -d' ' -f3) \
-		usr/src/linux-$(KERNEL_VERSION)/.config
-	$(MAKE) -C $(dir $@)
-	touch $@
-
-boot/vmlinux-$(KERNEL_VERSION): \
-		usr/src/linux-$(KERNEL_VERSION)/vmlinux
-	$(MAKE) -C $(dir $<) modules_install
-	$(MAKE) -C $(dir $<) install
-	touch $@
-
 # Grub installation and configuration
 boot/grub/grub.cfg: \
-		boot/vmlinux-$(KERNEL_VERSION) \
+		$(wildcard boot/vmlinux-*) \
 		boot/EFI/gentoo/grubx64.efi
 	grub-mkconfig -o $@
 
