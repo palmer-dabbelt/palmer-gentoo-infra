@@ -1,19 +1,2 @@
-# I want my initrd to be staticly linked.
-sys-fs/cryptsetup static kernel -gcrypt -nettle -openssl -udev -ssh
-sys-apps/busybox static -pam
-sys-apps/util-linux static-libs
-sys-fs/eudev static-libs
-sys-fs/lvm2 static-libs -udev
-dev-libs/libgpg-error static-libs
-dev-libs/popt static-libs
-virtual/libudev static-libs
-dev-libs/libaio static-libs
-dev-libs/json-c static-libs
-app-crypt/argon2 static-libs
-sys-kernel/linux-firmware -redistributable
-sys-libs/libxcrypt static-libs
-virtual/libcrypt static-libs
-net-libs/libssh static-libs
-
 # for os-prober
 sys-boot/grub mount

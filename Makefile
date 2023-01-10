@@ -9,6 +9,7 @@ update: var/lib/palmer/update.stamp
 # Synchronizes the portage database with upstream.
 .PHONY: sync
 sync: var/lib/palmer/sync.stamp
+	rm -f $<
 	$(MAKE) $<
 	$(MAKE)
 
