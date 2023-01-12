@@ -12,3 +12,6 @@ sys-apps/pcsc-lite
 
 # I want QEMU for local hackery
 app-emulation/qemu
+
+# For the GCC changelog generator
+dev-python/unidiff
