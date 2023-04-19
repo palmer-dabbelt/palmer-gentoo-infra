@@ -15,3 +15,6 @@ app-emulation/qemu
 
 # For the GCC changelog generator
 dev-python/unidiff
+
+# MHng needs Lynx
+www-client/lynx
