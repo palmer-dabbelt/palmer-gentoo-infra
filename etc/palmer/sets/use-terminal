@@ -36,3 +36,5 @@ x11-wm/awesome
 
 # I need this for my home drive
 dev-cpp/tclap
+
+net-misc/tigervnc
