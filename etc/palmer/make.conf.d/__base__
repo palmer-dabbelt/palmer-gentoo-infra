@@ -13,3 +13,5 @@ USE="python png clang pcre16 sqlite udev"
 USE="$USE elogind -consolekit -systemd"
 
 GIT_CEILING_DIRECTORIES=/var/tmp/portage
+
+PYTHON_TARGETS="python3_11 python3_10"
