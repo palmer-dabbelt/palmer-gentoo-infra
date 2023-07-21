@@ -42,3 +42,5 @@ app-text/pandoc
 dev-lang/ghc
 app-admin/haskell-updater
 dev-haskell/*
+
+www-client/google-chrome
