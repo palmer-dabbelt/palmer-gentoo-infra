@@ -37,10 +37,4 @@ dev-python/codename
 dev-python/pycryptodomex
 media-sound/clay
 
-# pandoc
-app-text/pandoc
-dev-lang/ghc
-app-admin/haskell-updater
-dev-haskell/*
-
 www-client/google-chrome
