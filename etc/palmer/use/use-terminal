@@ -18,3 +18,5 @@ dev-libs/efl -opengl gles2 -sdl wayland pulseaudio sound
 dev-libs/libxslt abi_x86_32
 dev-libs/icu abi_x86_32
 net-fs/samba winbind
+
+dev-python/pillow tiff
