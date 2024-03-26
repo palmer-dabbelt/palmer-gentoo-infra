@@ -26,6 +26,7 @@ app-shells/fzy
 x11-terms/kitty-terminfo
 x11-terms/kitty
 x11-terms/kitty-shell-integration
+dev-libs/simde
 
 # I need some newer packages for clay
 dev-python/MechanicalSoup
