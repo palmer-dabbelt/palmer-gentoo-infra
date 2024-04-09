@@ -39,3 +39,5 @@ dev-cpp/tclap
 net-misc/tigervnc
 
 dev-python/markdown
+
+x11-apps/xkill
