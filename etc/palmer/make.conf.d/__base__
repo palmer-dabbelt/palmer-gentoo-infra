@@ -16,4 +16,4 @@ USE="$USE dracut"
 
 GIT_CEILING_DIRECTORIES=/var/tmp/portage
 
-PYTHON_TARGETS="python3_11 python3_10"
+PYTHON_TARGETS="python3_12 python3_11 python3_10"
