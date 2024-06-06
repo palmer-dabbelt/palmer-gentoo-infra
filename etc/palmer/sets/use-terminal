@@ -41,3 +41,5 @@ net-misc/tigervnc
 dev-python/markdown
 
 x11-apps/xkill
+
+media-video/shotcut

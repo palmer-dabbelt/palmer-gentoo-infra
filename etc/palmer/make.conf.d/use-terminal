@@ -41,3 +41,6 @@ USE="$USE client"
 
 # Chromium uses inspection
 USE="$USE inspector"
+
+# Shotcut is written in QT, so might as well just have everything
+USE="$USE qt5 qt6 frei0r ffmpeg jack xml contribdnn"

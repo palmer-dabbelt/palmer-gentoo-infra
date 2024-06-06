@@ -39,3 +39,7 @@ dev-python/pycryptodomex
 media-sound/clay
 
 www-client/google-chrome
+
+# Shotcut video editor
+~media-libs/mlt-7.24.0
+~media-video/shotcut-24.02.19

@@ -20,3 +20,6 @@ dev-libs/icu abi_x86_32
 net-fs/samba winbind
 
 dev-python/pillow tiff
+
+# For shotcut
+media-libs/mlt libsamplerate qt5 qt6 vidstab
