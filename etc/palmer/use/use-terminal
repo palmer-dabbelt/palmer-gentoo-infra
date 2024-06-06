@@ -24,3 +24,4 @@ dev-python/pillow tiff
 # For shotcut
 media-libs/mlt libsamplerate qt5 qt6 vidstab
 media-video/pipewire extra
+media-libs/opencv contrib
